@@ -1,47 +1,5 @@
 <template>
 	<div>
-		<el-row class="header">
-			<el-col :span="2">
-				<el-avatar icon="el-icon-user-solid" :size="30" class="icons"></el-avatar>
-			</el-col>
-
-			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">课程管理</router-link>
-			</el-col>
-			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">班级管理</router-link>
-			</el-col>
-			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">学员管理</router-link>
-			</el-col>
-			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">订单管理</router-link>
-			</el-col>
-			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">教师管理</router-link>
-			</el-col>
-			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">统计分析</router-link>
-			</el-col>
-			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">支付中心</router-link>
-			</el-col>
-			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">系统管理</router-link>
-			</el-col>
-			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-ico">
-					<i class="el-icon-user-solid" style="background: #cccccc;color: #464c5b;border-radius: 50%;"></i>
-					账户设置</router-link>
-			</el-col>
-			<el-col :span="4">
-				<router-link tag="div" to="/" class="header-ico">
-					<i class="el-icon-orange" style="background: #cccccc;color: #464C5B;border-radius: 50%;"></i>
-					退出登录</router-link>
-			</el-col>
-		</el-row>
-
-
 		<el-row class="tac">
 			<el-col :span="4" class="tacs">
 				<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :default-openeds="['1','2','3']" >
@@ -88,7 +46,7 @@
 
 <script>
 	export default {
-		name: "home",
+		name: "system",
 		methods: {
 			handleOpen(key, keyPath) {
 				console.log(key, keyPath);
