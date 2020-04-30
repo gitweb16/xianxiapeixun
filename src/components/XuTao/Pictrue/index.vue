@@ -76,6 +76,8 @@
 			margin-top: -350px;
 			position: absolute;
 			margin-left: 450px;	
+			font-size: 13px;
+			font-weight: bold;
 		}
 		.shu li{
 			height: 75px;

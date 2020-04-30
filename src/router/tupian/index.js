@@ -1,4 +1,4 @@
 export default{
-	path:'/tupian',
-	component:()=>import('../../views/Tupian')
+	path:'/xutao/tupian',
+	component:()=>import('../../../views/Tao/Tupian')
 }
