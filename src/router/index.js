@@ -3,9 +3,11 @@ import VueRouter from 'vue-router'
 import test from '../components/test/test.vue'
 import home from '../views/home/index.vue'
 import PictureRoter from './tupian'
+import huodongRoter from './wjh/huodong'
+import parentRoter from './wjh/parent'
 Vue.use(VueRouter)
 
-  const routes = [
+  const routes = [	
   {
 	   path:'/',
 	   component:home
@@ -16,10 +18,10 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes:[
-	  PictureRoter,
+	  huodongRoter,
 	 {
 		 path:'/*',
-		 redirect:'/tupian'
+		 redirect:'/wjh/huodong'
 	 }
   ]
 })
