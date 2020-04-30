@@ -2,7 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import test from '../components/test/test.vue'
 import home from '../views/home/index.vue'
-import PictureRoter from './tupian'
+import PictureRoter from './xutao/tupian'
+import MenuRoter from './xutao/caidan'
+import PremiumRoter from './xutao/tuifei'
 Vue.use(VueRouter)
 
   const routes = [
@@ -16,10 +18,12 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes:[
-	  PictureRoter,
+	 PictureRoter,
+	 MenuRoter,
+	 PremiumRoter,
 	 {
 		 path:'/*',
-		 redirect:'/tupian'
+		 redirect:'/xutao/caidan'
 	 }
   ]
 })
