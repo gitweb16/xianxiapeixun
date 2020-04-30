@@ -34,14 +34,19 @@
 					账户设置</router-link>
 			</el-col>
 			<el-col :span="4">
-				<router-link tag="div" to="/" class="header-ico">
-					<i class="el-icon-orange" style="background: #cccccc;color: #464C5B;border-radius: 50%;"></i>
-					退出登录</router-link>
+				<template>
+					<button type="text" class="header-ico iconss" @click="open">
+						<i class="el-icon-orange" style="background: #cccccc;color: #464C5B;border-radius: 50%;"></i>
+						退出登录
+					</button>
+				</template>
 			</el-col>
 		</el-row>
-	        <keep-alive>
-				<router-view></router-view>
-			</keep-alive>
+		<keep-alive>
+			<router-view></router-view>
+		</keep-alive>
+
+
 	</div>
 
 </template>
@@ -49,15 +54,48 @@
 <script>
 	export default {
 		name: "header",
+		methods: {
+			open() {
+				this.$confirm('确认退出登录么？', '退出提示', {
+					confirmButtonText: '确定',
+					cancelButtonText: '取消',
+					type: 'warning'
+				}).then(action => {
+					this.$message({
+						type: 'info',
+						message: '退出成功',
+					
+					});
+					if (action ==='confirm') {
+						this.$router.push({path:'../header/student'})     
+						// this.$router.replace({path:'/header/student'})
+						//   设置登录页面	
+					}
+				}).catch(() => {
+					this.$message({
+						type: 'info',
+						message: '退出取消',
+
+					});
+				});
+			}
+
+		},
 	}
 </script>
 
 <style scoped>
+	.iconss {
+		background: transparent !important;
+		outline: none;
+		border: 0px solid transparent;
+	}
+
 	.views {
 		background-color: transparent;
 		height: 557px;
 		overflow: auto;
-	
+
 	}
 
 	.tites {
