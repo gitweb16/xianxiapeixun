@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import test from '../components/test/test.vue'
-import homeRouter from './header/index.js'
+import headerRouter from './header/index.js'
 
 
 
 Vue.use(VueRouter)
 
 const routes = [
-	homeRouter,
+	headerRouter,
 	// systemRouter,
 	{
 	path: '/',

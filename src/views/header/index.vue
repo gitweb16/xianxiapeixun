@@ -5,25 +5,25 @@
 				<el-avatar icon="el-icon-user-solid" :size="30" class="icons"></el-avatar>
 			</el-col>
 			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">课程管理</router-link>
+				<router-link tag="div" to="/header/course" class="header-top" tabindex="0">课程管理</router-link>
 			</el-col>
 			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">班级管理</router-link>
+				<router-link tag="div" to="/header/mana" class="header-top" tabindex="0">班级管理</router-link>
 			</el-col>
 			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">学员管理</router-link>
+				<router-link tag="div" to="/header/student" class="header-top" tabindex="0">学员管理</router-link>
 			</el-col>
 			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">订单管理</router-link>
+				<router-link tag="div" to="/header/order" class="header-top" tabindex="0">订单管理</router-link>
 			</el-col>
 			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">教师管理</router-link>
+				<router-link tag="div" to="/header/teacher" class="header-top" tabindex="0">教师管理</router-link>
 			</el-col>
 			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">统计分析</router-link>
+				<router-link tag="div" to="/header/stati" class="header-top" tabindex="0">统计分析</router-link>
 			</el-col>
 			<el-col :span="2">
-				<router-link tag="div" to="/" class="header-top" tabindex="0">支付中心</router-link>
+				<router-link tag="div" to="/header/pay" class="header-top" tabindex="0">支付中心</router-link>
 			</el-col>
 			<el-col :span="2">
 				<router-link tag="div" to="/header/system" class="header-top" tabindex="0">系统管理</router-link>
@@ -121,6 +121,7 @@
 	.header-top:focus {
 		color: white;
 		outline: none;
+		background: #1abc9c !important;
 	}
 
 	.header-ico {
