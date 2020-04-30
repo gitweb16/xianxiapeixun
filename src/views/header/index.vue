@@ -62,12 +62,12 @@
 					type: 'warning'
 				}).then(action => {
 					this.$message({
-						type: 'info',
+						type: 'warning',
 						message: '退出成功',
 					
 					});
 					if (action ==='confirm') {
-						this.$router.push({path:'../header/student'})     
+						this.$router.push({path:'../login'})     
 						// this.$router.replace({path:'/header/student'})
 						//   设置登录页面	
 					}

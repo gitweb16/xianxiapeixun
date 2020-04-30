@@ -22,7 +22,9 @@
 					alert("请输入用户");
 					return false;
 				}else if(this.yhm=="rua"){
-					alert("登陆成功");
+					this.$router.push({path:'./header/student'})     
+					
+					
 				}else{
 					alert("账号或密码输入错误")
 				}
@@ -31,7 +33,7 @@
 	}
 </script>
 
-<style export>
+<style scoped>
 	* {
 		cursor: pointer;
 		margin: 0px;
@@ -39,15 +41,22 @@
 	}
 
 	#app{
-		width: 1510px;
-		height: 623px;
+		width: 100%;
+		height: 937px;
 		background: #2f78ff;
 	}
+	#yonghu,#password{
+		outline: none;
+		border:1px solid #999999;
+		text-indent: 5px;
+		border-radius: 0%;
+	}
+	
 
 	#houtai {
 		position: absolute;
 		top: 120px;
-		margin-left: 588px;
+		margin-left: 788px;
 		background-color: white;
 		width: 350px;
 		height: 416px;
