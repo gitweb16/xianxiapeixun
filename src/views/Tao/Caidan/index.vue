@@ -1,12 +1,22 @@
+
 <template>
 	<div class="container">
 		<div class="jinE">
 			<p><span class="heng"></span><span class="heng2">菜单管理</span></p>
 		</div>
+				<Menu></Menu>
+		
 	</div>
 </template>
 
 <script>
+	import Menu from '../../../components/XuTao/Menu'
+	export default{
+		name:'Caidan',
+		components:{
+			Menu
+		}
+	}
 </script>
 
 <style>
@@ -20,7 +30,7 @@
 			background-color: #f9f9f9;
 			position: fixed;
 			z-index: 3;
-		
+		    margin-top: -100px;
 		}
 		.heng{
 			height:20px;
