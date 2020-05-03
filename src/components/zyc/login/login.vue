@@ -22,9 +22,7 @@
 					alert("请输入用户");
 					return false;
 				}else if(this.yhm=="rua"){
-					this.$router.push({path:'./header/student'})     
-					
-					
+					this.$router.push({path:'./header'})     
 				}else{
 					alert("账号或密码输入错误")
 				}

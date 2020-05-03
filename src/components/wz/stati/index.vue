@@ -8,7 +8,7 @@
 							<span class="tites">统计分析</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="/">考勤流水分析</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="/header/stati/teas">考勤流水分析</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="/">报班量统计分析</router-link>
 							<router-link tag="el-menu-item" index="1-3" to="/">报班金额统计分析</router-link>
 							<router-link tag="el-menu-item" index="1-4" to="/">教师业务流水分析</router-link>
@@ -17,7 +17,7 @@
 					</el-submenu>
 				</el-menu>
 			</el-col>
-			<el-col :span="20" :offset="2" class="views">
+			<el-col :span="20" :offset="4" class="views">
 				<keep-alive>
 					<router-view></router-view>
 				</keep-alive>
@@ -43,10 +43,15 @@
 
 <style scoped>
 	.views {
-		background-color: transparent;
+		/* background-color: black; */
 		height: 557px;
 		overflow: auto;
-
+		padding: 0px !important; 
+		position: absolute;
+		border: 1px solid red;
+	/* 	padding-left: 20px;
+		padding-top: 0px !important;
+		margin-top: 0px !important; */
 	}
 
 	.tites {

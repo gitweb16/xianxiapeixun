@@ -15,7 +15,7 @@
 					</el-submenu>
 				</el-menu>
 			</el-col>
-			<el-col :span="20" :offset="2" class="views">
+			<el-col :span="20" :offset="4" class="views">
 				<keep-alive>
 					<router-view></router-view>
 				</keep-alive>
@@ -42,10 +42,15 @@
 
 <style scoped>
 	.views {
-		background-color: transparent;
+		/* background-color: black; */
 		height: 557px;
 		overflow: auto;
-
+		padding: 0px !important; 
+		position: absolute;
+		border: 1px solid red;
+	/* 	padding-left: 20px;
+		padding-top: 0px !important;
+		margin-top: 0px !important; */
 	}
 
 	.tites {

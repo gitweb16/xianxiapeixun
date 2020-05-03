@@ -7,7 +7,7 @@ export default {
 		},
 		{
 			path: "course",
-			component: () => import('../../components/wz/course/index.vue'),
+			component: () => import('../../components/wz/course/index.vue')
 		},
 		{
 			path: "mana",
@@ -24,6 +24,12 @@ export default {
 		{
 			path: "stati",
 			component: () => import('../../components/wz/stati/index.vue'),
+			children:[
+				{
+					path:'teas',
+					component:() => import('../../components/wz/Teatch/teas.vue'),
+				}
+			]
 		},
 		{
 			path: "student",
@@ -35,7 +41,7 @@ export default {
 		},
 		{
 			path: '/header',
-			redirect: '/header/system'
+			redirect: '/header/course'
 		}
 	]
 }

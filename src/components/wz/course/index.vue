@@ -8,7 +8,7 @@
 							<span class="tites">课程管理</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="/">班级课程管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="">班级课程管理</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="/">晚辅导课程管理</router-link>
 							<router-link tag="el-menu-item" index="1-3" to="/">一对一课程管理</router-link>
 						</el-menu-item-group>
@@ -34,7 +34,7 @@
 					</el-submenu>
 				</el-menu>
 			</el-col>
-			<el-col :span="20" :offset="2"  class="views">
+			<el-col :span="20" :offset="4"  class="views">
 				 <keep-alive>
 					 <router-view></router-view>
 				 </keep-alive>
@@ -59,11 +59,16 @@
 </script>
 
 <style scoped>
-	.views {
-		background-color: transparent;
+.views {
+		/* background-color: black; */
 		height: 557px;
 		overflow: auto;
-	
+		padding: 0px !important; 
+		position: absolute;
+		border: 1px solid red;
+	/* 	padding-left: 20px;
+		padding-top: 0px !important;
+		margin-top: 0px !important; */
 	}
 
 	.tites {
