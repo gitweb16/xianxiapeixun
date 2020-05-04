@@ -4,6 +4,12 @@ export default {
 	children: [{
 			path: "system",
 			component: () => import('../../components/wz/system/system.vue'),
+			children:[
+				{
+					path:'Caidan',
+					component:() => import('../../views/Tao/Caidan/index.vue'),
+				}
+			]
 		},
 		{
 			path: "course",
@@ -16,6 +22,12 @@ export default {
 		{
 			path: "order",
 			component: () => import('../../components/wz/order/index.vue'),
+		    children:[
+				{
+					path:'Tufei',
+					component:() => import('../../views/Tao/Tuifei/index.vue'),
+				}
+			]
 		},
 		{
 			path: "teacher",
@@ -28,8 +40,13 @@ export default {
 				{
 					path:'teas',
 					component:() => import('../../components/wz/Teatch/teas.vue'),
+				},
+				{
+					path:'Tupian',
+					component:() => import('../../views/Tao/Tupian/index.vue'),
 				}
-			]
+			],
+			
 		},
 		{
 			path: "student",

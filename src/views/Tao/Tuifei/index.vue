@@ -18,17 +18,16 @@
 </script>
 
 <style>
-	.jinE{
-		width:90%;
-		margin-left:10px;
-		height:40px;
+	.jinE {
+		width: 100%;
+		/* 	margin-left:10px; */
+		height: 40px;
 		font-size: 12px;
 		color: darkgray;
 		line-height: 35px;
 		background-color: #f9f9f9;
-		position: fixed;
 		z-index: 3;
-		margin-top: -50px;
+		margin-bottom: 40px;
 	}
 	.heng{
 		height:20px;

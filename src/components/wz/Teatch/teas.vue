@@ -246,7 +246,7 @@
 	}
 
 	.jinE {
-		width: 92%;
+		width: 100%;
 		/* 	margin-left:10px; */
 		height: 40px;
 		font-size: 12px;
