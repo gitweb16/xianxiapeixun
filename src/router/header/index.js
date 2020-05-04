@@ -4,11 +4,14 @@ export default {
 	children: [{
 			path: "system",
 			component: () => import('../../components/wz/system/system.vue'),
-			children:[
+			children: [{
+					path: 'Caidan',
+					component: () => import('../../views/Tao/Caidan/index.vue'),
+				},
 				{
-					path:'Caidan',
-					component:() => import('../../views/Tao/Caidan/index.vue'),
-				}
+					path: 'account',
+					component: () => import('../../components/wz/Teatch/account.vue'),
+				},
 			]
 		},
 		{
@@ -18,16 +21,18 @@ export default {
 		{
 			path: "mana",
 			component: () => import('../../components/wz/mana/index.vue'),
+			children: [{
+				path: 'management',
+				component: () => import('../../components/wz/Teatch/management.vue'),
+			}]
 		},
 		{
 			path: "order",
 			component: () => import('../../components/wz/order/index.vue'),
-		    children:[
-				{
-					path:'Tufei',
-					component:() => import('../../views/Tao/Tuifei/index.vue'),
-				}
-			]
+			children: [{
+				path: 'Tufei',
+				component: () => import('../../views/Tao/Tuifei/index.vue'),
+			}]
 		},
 		{
 			path: "teacher",
@@ -36,17 +41,16 @@ export default {
 		{
 			path: "stati",
 			component: () => import('../../components/wz/stati/index.vue'),
-			children:[
-				{
-					path:'teas',
-					component:() => import('../../components/wz/Teatch/teas.vue'),
+			children: [{
+					path: 'teas',
+					component: () => import('../../components/wz/Teatch/teas.vue'),
 				},
 				{
-					path:'Tupian',
-					component:() => import('../../views/Tao/Tupian/index.vue'),
+					path: 'Tupian',
+					component: () => import('../../views/Tao/Tupian/index.vue'),
 				}
 			],
-			
+
 		},
 		{
 			path: "student",

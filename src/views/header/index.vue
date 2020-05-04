@@ -67,7 +67,7 @@
 					
 					});
 					if (action ==='confirm') {
-						this.$router.push({path:'../login'})     
+						this.$router.push({path:'../../login'})     
 						// this.$router.replace({path:'/header/student'})
 						//   设置登录页面	
 					}

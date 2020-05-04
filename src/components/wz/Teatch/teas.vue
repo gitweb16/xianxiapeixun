@@ -172,9 +172,9 @@
 		float: left;
 		position: relative;
 		height: 450px;
-		width: 1230px;
+		width: 1240px;
 		margin-top: 20px;
-		padding-left: 10px;
+	/* 	padding-left: 10px; */
 
 	}
 
