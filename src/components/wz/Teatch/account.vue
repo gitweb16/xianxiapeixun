@@ -195,7 +195,7 @@
 	}
 
 	.el-table tr:nth-child(even) td:last-child {
-		color: red;
+		color: red !important;
 	}
 
 	.el-table tr:nth-child(odd) td:last-child {
