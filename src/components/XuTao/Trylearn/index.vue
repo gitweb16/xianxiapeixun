@@ -11,11 +11,11 @@
 			    </el-option>
 			</el-select>
 		</div>
-		<div style="margin-left: 450px;margin-top: -40px;">
+		<div style="margin-left: 350px;margin-top: -40px;">
 			<span>课程名称：</span>
 			<el-input v-model="input" placeholder="请输入内容" style="width: 300px;"></el-input>
 		</div>
-		<div style="margin-left: 950px;margin-top: -40px;">
+		<div style="margin-left: 750px;margin-top: -40px;">
 			<span>是否活动：</span>
 			<el-select v-model="value" placeholder="请选择">
 			    <el-option
@@ -54,17 +54,17 @@
 			    <el-table-column
 			      prop="address"
 			      label="校区"
-			      width="180">
+			      width="120">
 			    </el-table-column>
 				<el-table-column
 				  label="年级"
-				  width="180"
+				  width="100"
 				  prop="ji">
 				</el-table-column>
 				<el-table-column
 				  prop="jia"
 				  label="原价"
-				  width="180">
+				  width="120">
 				</el-table-column>
 				<el-table-column
 				  prop="shi"
@@ -73,13 +73,13 @@
 				</el-table-column>
 			    <el-table-column
 			      label="试学价格"
-			      width="120"
+			      width="80"
 				    prop="ge">
 			    </el-table-column>
 			    <el-table-column
 			      prop="jian"
 			      label="试学时间"
-			      width="120">
+			      width="100">
 			    </el-table-column>
 			    <el-table-column
 			      prop="cao"
@@ -108,19 +108,19 @@
       return {
         options: [{
           value: '选项1',
-          label: '黄金糕'
+          label: '城南校区'
         }, {
           value: '选项2',
-          label: '双皮奶'
+          label: '世贸校区'
         }, {
           value: '选项3',
-          label: '蚵仔煎'
+          label: '万达校区'
         }, {
           value: '选项4',
-          label: '龙须面'
+          label: '滨江校区'
         }, {
           value: '选项5',
-          label: '北京烤鸭'
+          label: '花之南校区'
         }],
 		options3: [{
 		  value: '选项1',
@@ -258,7 +258,7 @@
 		color: white;
 		width: 5%;
 		float: right;
-		margin-right: 250px;
+		margin-right: 220px;
 		border-radius: 3px;
 		text-align: center;
 		font-size: 13px;

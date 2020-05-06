@@ -20,12 +20,13 @@
 
 <style>
 	.jinE{
-			width:90%;
-			height:40px;
+			width: 100%;
+			height: 40px;
 			font-size: 12px;
 			color: darkgray;
 			line-height: 35px;
 			background-color: #f9f9f9;
+			z-index: 3;
 			margin-bottom: 40px;
 		}
 		.heng{
