@@ -8,7 +8,7 @@
 							<span class="tites">账号管理</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="/">家长账号管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="/header/system/jiazhang">家长账号管理</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="/header/system/account">教师账号管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>

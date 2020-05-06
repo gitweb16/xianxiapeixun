@@ -12,11 +12,19 @@ export default {
 					path: 'account',
 					component: () => import('../../components/wz/Teatch/account.vue'),
 				},
+				{
+					path: 'jiazhang',
+					component: () => import('../../views/wjh/Parent/index.vue'),
+				}
 			]
 		},
 		{
 			path: "course",
-			component: () => import('../../components/wz/course/index.vue')
+			component: () => import('../../components/wz/course/index.vue'),
+			children: [{
+					path: 'active',
+					component: () => import('../../views/wjh/Huodong/index.vue'),
+				}]
 		},
 		{
 			path: "mana",
