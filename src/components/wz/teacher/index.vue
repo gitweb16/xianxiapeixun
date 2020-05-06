@@ -8,7 +8,7 @@
 							<span class="tites">教师管理</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="/">校区管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="">校区管理</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="/header/teacher/Laoshi">教师管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>

@@ -8,7 +8,7 @@
 							<span class="tites">账号管理</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="/">家长账号管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="">家长账号管理</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="/header/system/account">教师账号管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>
@@ -18,8 +18,8 @@
 						</template>
 						<el-menu-item-group>
 							<router-link tag="el-menu-item" index="1-1" to="/header/system/Caidan">菜单管理</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="/">权限管理</router-link>
-							<router-link tag="el-menu-item" index="1-3" to="/">组织架构管理</router-link>
+							<router-link tag="el-menu-item" index="1-2" to="">权限管理</router-link>
+							<router-link tag="el-menu-item" index="1-3" to="">组织架构管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>
 					<el-submenu index="3">
@@ -27,8 +27,8 @@
 							<span class="tites">系统数据</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="/">数据字典</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="/">日历管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="">数据字典</router-link>
+							<router-link tag="el-menu-item" index="1-2" to="">日历管理</router-link>
 							<router-link tag="el-menu-item" index="1-3" to="/header/system/Guanli">通知管理</router-link>
 							<router-link tag="el-menu-item" index="1-4" to="/header/system/Tongzhi">机构通知</router-link>
 						</el-menu-item-group>

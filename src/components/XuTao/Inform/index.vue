@@ -67,7 +67,7 @@
 						</li>
 					</ul>
 				</div>
-				<el-button slot="reference" style='position:absolute;margin-top:-460px;margin-left:380px;border:none'>查看</el-button>
+				<el-button slot="reference" style='position:absolute;margin-top:-450px;margin-left:240px;border:none;z-index: 3;'>查看</el-button>
 			</el-popover>
 			
 			
@@ -167,7 +167,7 @@
 		width: 30%;
 		margin-top: -5px;
 		position: absolute;
-		margin-left: 730px;
+		margin-left: 870px;
 		font-size: 13px;
 		color: darkgray;
 	}
@@ -176,7 +176,7 @@
 		color: white;
 		width: 5%;
 		float: right;
-		margin-right: 190px;
+		margin-right: 330px;
 		border-radius: 3px;
 		text-align: center;
 		font-size: 13px;
