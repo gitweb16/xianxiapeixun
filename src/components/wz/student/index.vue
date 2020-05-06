@@ -8,8 +8,8 @@
 							<span class="tites">学员管理</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="/">学员列表</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="/">学员管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="">学员列表</router-link>
+							<router-link tag="el-menu-item" index="1-2" to="">学员管理</router-link>
 							
 						</el-menu-item-group>
 					</el-submenu>

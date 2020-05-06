@@ -9,8 +9,8 @@
 						</template>
 						<el-menu-item-group>
 							<router-link tag="el-menu-item" index="1-1" to="">班级课程管理</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="/">晚辅导课程管理</router-link>
-							<router-link tag="el-menu-item" index="1-3" to="/">一对一课程管理</router-link>
+							<router-link tag="el-menu-item" index="1-2" to="">晚辅导课程管理</router-link>
+							<router-link tag="el-menu-item" index="1-3" to="">一对一课程管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>
 					<el-submenu index="2">
@@ -18,9 +18,9 @@
 							<span class="tites">课程消耗</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="/">班级课程消耗</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="/">晚辅导课程消耗</router-link>
-							<router-link tag="el-menu-item" index="1-3" to="/">一对一课程消耗</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="">班级课程消耗</router-link>
+							<router-link tag="el-menu-item" index="1-2" to="">晚辅导课程消耗</router-link>
+							<router-link tag="el-menu-item" index="1-3" to="">一对一课程消耗</router-link>
 						</el-menu-item-group>
 					</el-submenu>
 					<el-submenu index="3">
@@ -29,7 +29,7 @@
 						</template>
 						<el-menu-item-group>
 							<router-link tag="el-menu-item" index="1-1" to="/header/course/active">班级课程活动管理</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="/">晚辅导课程活动管理</router-link>
+							<router-link tag="el-menu-item" index="1-2" to="">晚辅导课程活动管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>
 				</el-menu>
