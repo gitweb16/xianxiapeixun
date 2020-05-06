@@ -16,7 +16,14 @@ export default {
 		},
 		{
 			path: "course",
-			component: () => import('../../components/wz/course/index.vue')
+			component: () => import('../../components/wz/course/index.vue'),
+			children:[
+				{
+					path:'Curriculum',
+					component:()=>import('../../components/wz/Teatch/Curriculum.vue')
+				}
+			]
+			
 		},
 		{
 			path: "mana",

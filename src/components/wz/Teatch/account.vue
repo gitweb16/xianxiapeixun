@@ -15,7 +15,7 @@
 					</el-select>
 				</li>
 				<li><span>手机号码：</span>
-					<el-input v-model="input" placeholder="请输入内容"></el-input>
+					<el-input v-model="inputs" placeholder="请输入内容"></el-input>
 				</li>
 			</ul>
 		</div>
@@ -48,6 +48,7 @@
 		data() {
 			return {
 				input: '',
+				inputs:'',
 				tableData: [{
 						date: '教师一',
 						name: '城南校区',
@@ -169,7 +170,7 @@
 
 	.center {
 		margin: 0px auto;
-		width: 1500px;
+		width:1550px;
 	}
 
 	.el-table th {
