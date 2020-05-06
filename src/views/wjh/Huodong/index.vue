@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="jinE">
-			<p><span class="heng"></span><span class="heng2">菜单管理</span></p>
+			<p><span class="heng"></span><span class="heng2">班级活动管理</span></p>
 		</div>
 		<Huodong></Huodong>
 		<xiaoqu></xiaoqu>

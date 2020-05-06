@@ -118,11 +118,11 @@
 						label: '滨江校区'
 					},
 					{
-						value: '选项5',
+						value: '选项6',
 						label: '九桐桥校区'
 					},
 					{
-						value: '选项5',
+						value: '选项7',
 						label: '万达校区'
 					}
 
@@ -134,7 +134,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.jinE {
 		width: 100%;
 		/* 	margin-left:10px; */

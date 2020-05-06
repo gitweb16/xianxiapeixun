@@ -1,30 +1,19 @@
 <template>
 	<div>
 		<div class="jinE">
-			<p><span class="heng"></span><span class="heng2">菜单管理</span></p>
+			<p><span class="heng"></span><span class="heng2">家长账号管理</span></p>
 		</div>
-		<biaoge></biaoge>
-		<xiaoqu></xiaoqu>
-		<yes></yes>
+		<parent></parent>
 	</div>
 </template>
 
 <script>
-import Huodong from'../../../components/wjh/Active/biaoge'
-import xiaoqu from'../../../components/wjh/Active/xiaoqu'
-import yes from'../../../components/wjh/Active/yes'
+import parent from'../../../components/wjh/Parent'
 
-
-
-// import parent from'../../../components/wjh/Parent/biaoge'
-// import zhuce from'../../../components/wjh/Parent/zhuce'
 export default{
-	name:'huodong1',
-	components: {
-		Huodong,
-		xiaoqu,
-		yes
-		
+	name:'jiazhang',
+	components:{
+		parent,
 	}
 }
 </script>

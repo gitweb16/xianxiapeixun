@@ -342,7 +342,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.jinE {
 		width: 100%;
 		/* 	margin-left:10px; */
