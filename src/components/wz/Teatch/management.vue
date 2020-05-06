@@ -41,16 +41,16 @@
 		<el-dialog :visible.sync="dialogFormVisible" style="width: 1200px!important;margin: 0px auto;">
 			<el-form :model="form">
 				<el-form-item label="校区" :label-width="formLabelWidth">
-					<el-select v-model="value" clearable placeholder="请选择">
-						<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+					<el-select v-model="values" clearable placeholder="请选择">
+						<el-option v-for="item in optionss" :key="item.values" :label="item.labels" :value="item.values">
 						</el-option>
 					</el-select>
 				</el-form-item>
 				<el-form-item label="教师名称" :label-width="formLabelWidth">
-				      <el-input placeholder="请输入"></el-input>     
+				      <el-input placeholder="请输入" v-model="names"></el-input>     
 				</el-form-item>
 				<el-form-item label="教师位置" :label-width="formLabelWidth">
-				      <el-input placeholder="请输入"></el-input>     
+				      <el-input placeholder="请输入" v-model="dates"></el-input>     
 				</el-form-item>
 			</el-form>
 			<div slot="footer" class="dialog-footer">
@@ -66,6 +66,35 @@
 		name: "management",
 		data() {
 			return {
+				names:'',
+				dates:'',
+				value:'',
+				values:'',
+				optionss: [{
+						values: '选项1',
+						labels: '城南校区'
+					}, {
+						values: '选项2',
+						labels: '水榭校区'
+					}, {
+						values: '选项3',
+						labels: '世贸校区'
+					}, {
+						values: '选项4',
+						labels: '花之南校区'
+					}, {
+						values: '选项5',
+						labels: '滨江校区'
+					},
+					{
+						values: '选项5',
+						labels: '九桐桥校区'
+					},
+					{
+						values: '选项5',
+						labels: '万达校区'
+					}
+				],
 				options: [{
 						value: '选项1',
 						label: '城南校区'
@@ -196,7 +225,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.jinE {
 		width: 100%;
 		/* 	margin-left:10px; */
@@ -237,12 +266,11 @@
 
 	.center {
 		margin: 0px auto;
-		width: 1500px;
+		width: 1550px;
 	}
 
 	.el-table th {
 		background: #d7d7d7;
-
 		color: black;
 		font-weight: normal;
 	}

@@ -155,7 +155,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.el-table th{
 	   background: #f6f9fc; 	
 	}
