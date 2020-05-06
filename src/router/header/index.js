@@ -29,7 +29,9 @@ export default {
 				{
 					path:'Curriculum',
 					component:()=>import('../../components/wz/Teatch/Curriculum.vue')
-				},{
+				},
+				{
+
 					path:'Shixue',
 					component:()=>import('../../views/Tao/Shixue/index.vue')
 				}
