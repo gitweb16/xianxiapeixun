@@ -9,11 +9,8 @@
 						</template>
 						<el-menu-item-group>
 							<router-link tag="el-menu-item" index="1-1" to="">校区管理</router-link>
-<<<<<<< HEAD
-							<router-link tag="el-menu-item" index="1-2" to="">教师管理</router-link>
-=======
 							<router-link tag="el-menu-item" index="1-2" to="/header/teacher/Laoshi">教师管理</router-link>
->>>>>>> f54a91bf08d21b58d5553aefbfdc6a25dcbd9222
+
 						</el-menu-item-group>
 					</el-submenu>
 				</el-menu>
