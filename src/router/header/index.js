@@ -16,22 +16,17 @@ export default {
 		},
 		{
 			path: "course",
-			component: () => import('../../components/wz/course/index.vue'),
-			children:[
-				{
-					path:'Curriculum',
-					component:()=>import('../../components/wz/Teatch/Curriculum.vue')
-				}
-			]
-			
+			component: () => import('../../components/wz/course/index.vue')
 		},
 		{
 			path: "mana",
 			component: () => import('../../components/wz/mana/index.vue'),
-			children: [{
-				path: 'management',
-				component: () => import('../../components/wz/Teatch/management.vue'),
-			}]
+			children: [
+				{
+					path: 'management',
+					component: () => import('../../components/wz/Teatch/management.vue'),
+				},
+			],
 		},
 		{
 			path: "order",

@@ -20,8 +20,7 @@
 
 <style>
 	.jinE {
-		width: 92%;
-		/* 	margin-left:10px; */
+		width: 100%;
 		height: 40px;
 		font-size: 12px;
 		color: darkgray;
