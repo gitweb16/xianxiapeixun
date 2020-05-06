@@ -13,11 +13,11 @@ export default {
 					component: () => import('../../components/wz/Teatch/account.vue'),
 				},
 				{
-<<<<<<< HEAD
+
 					path: 'jiazhang',
 					component: () => import('../../views/wjh/Parent/index.vue'),
 				}
-=======
+
 					path: 'Guanli',
 					component: () => import('../../views/Tao/Guanli/index.vue'),
 				},
@@ -25,19 +25,22 @@ export default {
 					path: 'Tongzhi',
 					component: () => import('../../views/Tao/Tongzhi/index.vue'),
 				},
->>>>>>> f54a91bf08d21b58d5553aefbfdc6a25dcbd9222
+
 			]
 		},
 		{
 			path: "course",
 			component: () => import('../../components/wz/course/index.vue'),
-<<<<<<< HEAD
+
 			children: [{
+					
+				}]
+
+			children:[
+				{
 					path: 'active',
 					component: () => import('../../views/wjh/Huodong/index.vue'),
-				}]
-=======
-			children:[
+				},
 				{
 					path:'Curriculum',
 					component:()=>import('../../components/wz/Teatch/Curriculum.vue')
@@ -48,7 +51,6 @@ export default {
 					component:()=>import('../../views/Tao/Shixue/index.vue')
 				}
 			]
->>>>>>> f54a91bf08d21b58d5553aefbfdc6a25dcbd9222
 		},
 		{
 			path: "mana",
