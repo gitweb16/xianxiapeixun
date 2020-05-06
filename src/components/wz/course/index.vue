@@ -2,13 +2,13 @@
 	<div>
 		<el-row class="tac">
 			<el-col :span="4" class="tacs">
-				<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :default-openeds="['1','2','3']" >
-					<el-submenu index="1" >
+				<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :default-openeds="['1','2','3']">
+					<el-submenu index="1">
 						<template slot="title" class="tit">
 							<span class="tites">课程管理</span>
 						</template>
 						<el-menu-item-group>
-						
+
 							<router-link tag="el-menu-item" index="1-1" to="/header/course/Curriculum">班级课程管理</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="">晚辅导课程管理</router-link>
 							<router-link tag="el-menu-item" index="1-3" to="">一对一课程管理</router-link>
@@ -36,10 +36,10 @@
 					</el-submenu>
 				</el-menu>
 			</el-col>
-			<el-col :span="20" :offset="4"  class="views">
-				 <keep-alive>
-					 <router-view></router-view>
-				 </keep-alive>
+			<el-col :span="20" :offset="4" class="views">
+				<keep-alive>
+					<router-view></router-view>
+				</keep-alive>
 			</el-col>
 		</el-row>
 	</div>
@@ -61,14 +61,14 @@
 </script>
 
 <style scoped>
-.views {
+	.views {
 		/* background-color: black; */
-		height: 557px;
+		height: 885px;
 		overflow: auto;
-		padding: 0px !important; 
+		padding: 0px !important;
 		position: absolute;
 		border: 1px solid red;
-	/* 	padding-left: 20px;
+		/* 	padding-left: 20px;
 		padding-top: 0px !important;
 		margin-top: 0px !important; */
 	}
@@ -106,7 +106,7 @@
 
 	.tacs {
 		position: absolute;
-		height: 557px;
+		height: 885px;
 		overflow: auto;
 	}
 
