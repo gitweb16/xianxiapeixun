@@ -1,6 +1,6 @@
 <template>
   <div class="tuFouer">
-	  <span>报班类型统计</span>
+	  <span  style=" font-weight: bold;">报班类型统计</span>
 	  <ve-pie :data="chartData"></ve-pie>
   </div>
 </template>
@@ -30,7 +30,8 @@
 		position: absolute;
 		left: 0px;
 		margin-left: 800px;
-		margin-top: -400px;
+		margin-top: -425px;
+		padding-top: 20px;
 		}
 		.tuFouer span:nth-of-type(1){
 			position: absolute;

@@ -13,26 +13,52 @@ export default {
 					component: () => import('../../components/wz/Teatch/account.vue'),
 				},
 				{
+<<<<<<< HEAD
 					path: 'jiazhang',
 					component: () => import('../../views/wjh/Parent/index.vue'),
 				}
+=======
+					path: 'Guanli',
+					component: () => import('../../views/Tao/Guanli/index.vue'),
+				},
+				{
+					path: 'Tongzhi',
+					component: () => import('../../views/Tao/Tongzhi/index.vue'),
+				},
+>>>>>>> f54a91bf08d21b58d5553aefbfdc6a25dcbd9222
 			]
 		},
 		{
 			path: "course",
 			component: () => import('../../components/wz/course/index.vue'),
+<<<<<<< HEAD
 			children: [{
 					path: 'active',
 					component: () => import('../../views/wjh/Huodong/index.vue'),
 				}]
+=======
+			children:[
+				{
+					path:'Curriculum',
+					component:()=>import('../../components/wz/Teatch/Curriculum.vue')
+				},
+				{
+
+					path:'Shixue',
+					component:()=>import('../../views/Tao/Shixue/index.vue')
+				}
+			]
+>>>>>>> f54a91bf08d21b58d5553aefbfdc6a25dcbd9222
 		},
 		{
 			path: "mana",
 			component: () => import('../../components/wz/mana/index.vue'),
-			children: [{
-				path: 'management',
-				component: () => import('../../components/wz/Teatch/management.vue'),
-			}]
+			children: [
+				{
+					path: 'management',
+					component: () => import('../../components/wz/Teatch/management.vue'),
+				},
+			],
 		},
 		{
 			path: "order",
@@ -45,6 +71,10 @@ export default {
 		{
 			path: "teacher",
 			component: () => import('../../components/wz/teacher/index.vue'),
+			children:[{
+					path: 'Laoshi',
+					component: () => import('../../views/Tao/Laoshi/index.vue'),
+			}]
 		},
 		{
 			path: "stati",
@@ -56,7 +86,8 @@ export default {
 				{
 					path: 'Tupian',
 					component: () => import('../../views/Tao/Tupian/index.vue'),
-				}
+				},
+				
 			],
 
 		},

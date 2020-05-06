@@ -1,47 +1,40 @@
 <template>
 	<div class="content">
 		<div class="jinE">
-			<p><span class="heng"></span><span class="heng2">报班金额统计分析</span></p>
+			<p><span class="heng"></span><span class="heng2">考情流水分析</span></p>
 		</div>
 		<div class="tp">
-			<Pictrue></Pictrue>
+			<Check></Check>
 			<Pictrue2></Pictrue2>
-			<Pictrue3></Pictrue3>
-			<Pictrue4></Pictrue4>
 			<Pictrue5></Pictrue5>
 		</div>
 	</div>
 </template>
 
 <script>
-	import Pictrue from '../../../components/XuTao/Pictrue'
+	import Check from '../../../components/XuTao/Check'
 	import Pictrue2 from '../../../components/XuTao/Pictrue2'
-	import Pictrue3 from '../../../components/XuTao/Pictrue3'
-	import Pictrue4 from '../../../components/XuTao/Pictrue4'
 	import Pictrue5 from '../../../components/XuTao/Pictrue5'
 	export default{
 		name:'Tupian',
 		components:{
-		  Pictrue,
+		  Check,
 		  Pictrue2,
-		  Pictrue3,
-		  Pictrue4,
 		  Pictrue5
 		}
 	}
 </script>
 
 <style>
-	.jinE {
-		width: 100%;
-		height: 40px;
-		font-size: 12px;
-		color: darkgray;
-		line-height: 35px;
-		background-color: #f9f9f9;
-		z-index: 3;
-		margin-bottom: 40px;
-	}
+	.jinE{
+			width:92%;
+			height:40px;
+			font-size: 12px;
+			color: darkgray;
+			line-height: 35px;
+			background-color: #f9f9f9;
+			margin-bottom: 40px;	
+		}
 		.heng{
 			height:20px;
 			line-height: 40px;
@@ -61,7 +54,5 @@
 			line-height: 40px;
 			
 		}
-		.tp{
-			margin-top: 50px;
-		}
+		
 </style>

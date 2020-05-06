@@ -3,7 +3,7 @@
 		<el-table
 		    :data="tableData"
 		    stripe
-		    style="width: 100%;">
+		    style="width: 100%;margin-left: 80px;margin-top: -40px;">
 			<el-table-column
 			  prop="hao"
 			  label="原订单号"
@@ -59,9 +59,9 @@
 					<li>剩余课时: 12</li>
 					<li>剩余总价: 1200</li>
 					<li><span class="shi">退费方式:</span>
-					<div>
-								<el-select v-model="value" placeholder="请选择退款方式" class='ze'>
-								   <el-option
+					<div style="margin-left: 50px;">
+								<el-select v-model="value" placeholder="请选择退款方式" style="border:none;width: 250px;"  >
+								   <el-option style="border: none;"
 								     v-for="item in options"
 								     :key="item.value"
 								     :label="item.label"
@@ -246,13 +246,11 @@
 <style>
 	.container{
 		width: 90%;
-		margin-left: 70px;
-		margin-top: 50px;
 	}
 	.nei{
 		position: absolute;	
-		margin-top: -565px;
-		margin-left: 1060px;
+		margin-top: -540px;
+		margin-left: 1230px;
 	}
 	.xiang{
 	font-weight: bold;	
@@ -302,13 +300,16 @@
 	}
 	.ding li:nth-of-type(14){
 		height: 260px;
+		width: 100%;
 	}
 	.ze{
-		margin-left: 30px;
+		height: 100px;
 	}
 	.shi{
 		margin-top: 12px;
 		position: absolute;
+		display: block;
+		width: 10%;
 		display: block;
 	}
 	#fenye{

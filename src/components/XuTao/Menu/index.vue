@@ -57,7 +57,7 @@
 				<el-table-column
 				  prop="xu"
 				  label="序"
-				  width="180">
+				  width="100">
 				</el-table-column>
 				<el-table-column
 				  prop="lei"
@@ -67,12 +67,12 @@
 				<el-table-column
 				  prop="cming"
 				  label="菜单名称"
-				  width="180">
+				  width="100">
 				</el-table-column>
 			    <el-table-column
 			      prop="fuming"
 			      label="父菜单名"
-			      width="180">
+			      width="100">
 			    </el-table-column>
 			    <el-table-column
 			      prop="genming"
@@ -424,8 +424,9 @@
 		position: absolute;
 		left: 0px;
 		top: 0px;
-		margin-left: 160px;
+		margin-left: 130px;
 		margin-top: 60px;
+	
 	}
 	#ii el-option{
 		float: right;
@@ -435,7 +436,7 @@
 		position: absolute;
 		left: 0px;
 		top: 0px;
-		margin-left: 560px;
+		margin-left: 500px;
 		margin-top: 60px;
 	}
 	#fi el-option{
@@ -446,7 +447,7 @@
 		position: absolute;
 		left: 0px;
 		top: 0px;
-		margin-left: 960px;
+		margin-left: 860px;
 		margin-top: 60px;
 	}
 	#cName el-autocomplete{
@@ -456,7 +457,7 @@
 		position: absolute;
 		left: 0px;
 		top:0px;
-		margin-left: 100px;
+		margin-left: 70px;
 		margin-top: 70px;
 		font-size: 13px;
 		color: darkgray;
@@ -465,7 +466,7 @@
 		position: absolute;
 		left: 0px;
 		top:0px;
-		margin-left: 500px;
+		margin-left: 440px;
 		margin-top: 70px;
 		font-size: 13px;
 		color: darkgray;
@@ -474,18 +475,19 @@
 		position: absolute;
 		left: 0px;
 		top:0px;
-		margin-left: 900px;
+		margin-left: 790px;
 		margin-top: 70px;
 		font-size: 13px;
 		color: darkgray;
+			width: 250px;
 	}
 	#sou{
-		color: white;
 		width: 5%;
 		float: right;
 		margin-right: 190px;
 		border-radius: 3px;
 		text-align: center;
+		margin-top: -82px;
 	}
 	#sou span{
 		color: white;
@@ -494,7 +496,7 @@
 		text-align: center;
 		line-height: 40px;
 		display: block;
-		margin-top: -42px;
+	
 		box-shadow: 0px 0px 5px #5DABEC;
 	}
 	.my-autocomplete {
@@ -521,9 +523,11 @@
 		width: 4%;
 		font-size: 12px;
 		float: left;
-		margin-left: 100px;
+		margin-left: 70px;
 		border-radius: 3px;
 		text-align: center;
+		height: 40px;
+		line-height: 40px;
 	}
 	#add span{
 		color: white;
@@ -532,22 +536,22 @@
 		text-align: center;
 		line-height: 30px;
 		display: block;
-		margin-top: 12px;
+		margin-top: -12px;
 		box-shadow: 0px 0px 5px #5DABEC;
 	}
 	.biao{		
 		width: 81%;
-		margin-left: 100px;
+		margin-left: 70px;
 		margin-top: 50px;
 	}
 	#fenye{
-		margin-left: 500px;
+		margin-left: 300px;
 		margin-top: 20px;
 	}
 	.cai{
 		position: absolute;	
-		margin-top: -515px;
-		margin-left: 1140px;
+		margin-top: -595px;
+		margin-left: 1010px;
 		height:500px ;
 	}
 	.xiang  li{
