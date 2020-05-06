@@ -21,10 +21,20 @@ export default {
 		{
 			path: "mana",
 			component: () => import('../../components/wz/mana/index.vue'),
-			children: [{
-				path: 'management',
-				component: () => import('../../components/wz/Teatch/management.vue'),
-			}]
+			children: [
+				{
+					path: 'management',
+					component: () => import('../../components/wz/Teatch/management.vue'),
+				},
+				{
+					path: 'fenban',
+					component: () => import('../../components/zyc/fenban/fenbanguanli.vue'),
+				},
+				{
+					path: 'banfenliebiao',
+					component: () => import('../../components/zyc/fenban/banfenliebiao.vue'),
+				}
+			],
 		},
 		{
 			path: "order",
@@ -32,7 +42,12 @@ export default {
 			children: [{
 				path: 'Tufei',
 				component: () => import('../../views/Tao/Tuifei/index.vue'),
-			}]
+			},
+				{
+					path: 'Inform',
+					component: () => import('../../components/zyc/dingdan/dingdanguanli.vue'),
+				}
+			]
 		},
 		{
 			path: "teacher",
