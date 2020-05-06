@@ -1,6 +1,6 @@
 <template>
 	<div class="tuThree">
-		<span>手机报表转化分析</span>
+		<span  style=" font-weight: bold;">手机报表转化分析</span>
 	<ve-funnel :data="chartData" :settings="chartSettings"></ve-funnel>	
 	</div>
   
@@ -35,6 +35,7 @@
 		box-shadow: 0px 0px 16px lightgrey;
 		overflow: hidden;
 		margin-left: 100px;
+		padding-top: 20px;
 		}
 		.tuThree span:nth-of-type(1){
 			position: absolute;

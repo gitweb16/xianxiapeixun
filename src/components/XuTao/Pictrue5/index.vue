@@ -1,6 +1,6 @@
 <template>
 	<div class="tuFive">
-		<span>最近报班金额趋势</span>
+		<span  style=" font-weight: bold;">最近报班金额趋势</span>
 		<span id="xuan">
 			<el-select v-model="value" placeholder="请选择">
 				<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
@@ -96,8 +96,9 @@
 	.tuFive {
 		border: 1px solid lightgrey;
 		margin-top: 20px;
-		width: 86%;
+		width: 90%;
 		margin-left: 100px;
+		padding-top: 20px;
 	}
 
 	.tuFive span:nth-of-type(1) {

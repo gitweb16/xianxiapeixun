@@ -1,18 +1,19 @@
+
 <template>
 	<div class="tuOne">
-		<span style=" font-weight: bold;">报班统计</span>
+		<span>今日考情总览</span>
 		 <ve-ring :data="chartData1" :settings="chartSettings"></ve-ring>
 		 <div class="ban">
 			 <ul>
-				 <li>业务报班</li>
-				 <li>自主报班</li>
+				 <li>未到</li>
+				 <li>实到</li>
 			 </ul>
 		 </div>
 		 <div class="shu">
 			 <ul>
-				 <li>总量<span>100</span></li>
-				 <li>自主报班<span>90</span></li>
-				 <li>业务报班<span>10</span></li>
+				 <li>应到<span>1400</span></li>
+				 <li>实到<span>1330</span></li>
+				 <li>未到<span>70</span></li>
 			 </ul>
 		 </div>
 	</div>
@@ -20,7 +21,7 @@
 
 <script>
 	 export default {
-		 name:'Pictrue',
+		 name:'Check',
 	    data () {
 	      this.chartSettings = {
 	        dimension: '日期',
@@ -30,8 +31,8 @@
 	        chartData1: {
 	          columns: ['日期', '访问用户'],
 	          rows: [
-	            { '日期': '业务报班10.00%', '访问用户': 1393 },
-	            { '日期': '自主报班90.00%', '访问用户': 3530 }
+	            { '日期': '未到5.00%', '访问用户': 593 },
+	            { '日期': '实到95.00%', '访问用户': 3530 }
 	          ]
 	        }
 	      }
@@ -41,12 +42,10 @@
 <style>
 	.tuOne{
 		width: 40%;
-		margin-top: 20px;
 		border: 1px solid lightgrey;
 		box-shadow: 0px 0px 16px lightgrey;
 		overflow: hidden;
-		margin-left: 100px;
-		padding-top: 20px;
+		margin-left: 50px;
 		}
 		.tuOne span:nth-of-type(1){
 			position: absolute;
@@ -62,7 +61,7 @@
 		}
 		.ban ul{
 			font-size: 12px;
-			margin: 0px 20px;
+			margin: 80px 20px;
 		}
 		.ban ul li:nth-of-type(1){
 				text-align: right;
@@ -74,7 +73,7 @@
 		}
 	    .shu{
 			width: 10%;
-			margin-top: -350px;
+			margin-top: -300px;
 			position: absolute;
 			margin-left: 450px;	
 			font-size: 13px;
@@ -85,30 +84,3 @@
 			line-height: 75px;
 		}
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

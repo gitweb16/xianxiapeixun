@@ -12,11 +12,23 @@ export default {
 					path: 'account',
 					component: () => import('../../components/wz/Teatch/account.vue'),
 				},
+				{
+					path: 'Tongzhi',
+					component: () => import('../../views/Tao/Tongzhi/index.vue'),
+				},
+				{
+					path: 'Guanli',
+					component: () => import('../../views/Tao/Guanli/index.vue'),
+				},
 			]
 		},
 		{
 			path: "course",
-			component: () => import('../../components/wz/course/index.vue')
+			component: () => import('../../components/wz/course/index.vue'),
+			children:[{
+					path: 'Shixue',
+					component: () => import('../../views/Tao/Shixue/index.vue'),
+			}]
 		},
 		{
 			path: "mana",
@@ -37,6 +49,10 @@ export default {
 		{
 			path: "teacher",
 			component: () => import('../../components/wz/teacher/index.vue'),
+			children: [{
+				path: 'Laoshi',
+				component: () => import('../../views/Tao/Laoshi/index.vue'),
+			}]
 		},
 		{
 			path: "stati",

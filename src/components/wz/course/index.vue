@@ -11,6 +11,7 @@
 							<router-link tag="el-menu-item" index="1-1" to="">班级课程管理</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="/">晚辅导课程管理</router-link>
 							<router-link tag="el-menu-item" index="1-3" to="/">一对一课程管理</router-link>
+							<router-link tag="el-menu-item" index="1-4" to="/header/course/Shixue">试学课程</router-link>
 						</el-menu-item-group>
 					</el-submenu>
 					<el-submenu index="2">

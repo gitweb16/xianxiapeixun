@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="tuTwo">
-			  <span>各校区报表金额统计</span>
+			  <span  style=" font-weight: bold;">各校区报表金额统计</span>
 			  <ve-histogram :data="chartData" :settings="chartSettings"></ve-histogram>
 		</div>
 	</div>
@@ -41,7 +41,8 @@
 		position: absolute;
 		left: 0px;
 		margin-left: 800px;
-        margin-top: -400px;
+        margin-top: -425px;
+		padding-top: 20px;
 	}
 	.tuTwo span:nth-of-type(1){
 		position: absolute;
