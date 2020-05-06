@@ -1,35 +1,32 @@
 <template>
 	<div>
 		<div class="jinE">
-			<p><span class="heng"></span><span class="heng2">教师账号管理</span></p>
+			<p><span class="heng"></span><span class="heng2">分班管理</span></p>
 		</div>
 		<div>
 			<ul class="uls">
-				<li><span>教师姓名：</span>
-					<el-input v-model="input" placeholder="请输入内容"></el-input>
+				<li><span>校区：</span>
+					<el-input v-model="input" placeholder="请输入校区"></el-input>
 				</li>
-				<li><span>所在校区：</span>
-					<el-select v-model="value" clearable placeholder="请选择">
+				<li><span>课程名称：</span>
+					<el-select v-model="value" clearable placeholder="请输入内容">
 						<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
 						</el-option>
 					</el-select>
-				</li>
-				<li><span>手机号码：</span>
-					<el-input v-model="inputs" placeholder="请输入内容"></el-input>
 				</li>
 			</ul>
 		</div>
 		<div class="center">
 			<el-table :data="tableData" style="width: 100%">
-				<el-table-column prop="date" label="教师姓名" width="240">
+				<el-table-column prop="date" label="课程编码" width="240">
 				</el-table-column>
-				<el-table-column prop="name" label="所住校区" width="240">
+				<el-table-column prop="name" label="课程名称" width="240">
 				</el-table-column>
-				<el-table-column prop="address" label="手机号码" width="240">
+				<el-table-column prop="address" label="校区" width="240">
 				</el-table-column>
-				<el-table-column prop="money" label="状态" width="240">
+				<el-table-column prop="money" label="未排课人数" width="240">
 				</el-table-column>
-				<el-table-column prop="count" label="重置密码" width="270">
+				<el-table-column prop="count" label="已分班数量" width="270">
 				</el-table-column>
 				<el-table-column prop="cart" label="操作" width="270">
 				</el-table-column>
@@ -44,61 +41,60 @@
 
 <script>
 	export default {
-		name: "account",
+		name: "fenban",
 		data() {
 			return {
 				input: '',
-				inputs:'',
 				tableData: [{
-						date: '教师一',
-						name: '城南校区',
-						address: '1851616544',
-						money: '正常',
-						count: '重置密码	',
-						cart: '冻结'
+						date: 'BJKC -20190405',
+						name: '初中一年级班级课程',
+						address: '城南校区',
+						money: '12',
+						count: '1	',
+						cart: '分班'
 					}, {
-						date: '教师二',
-						name: '滨江校区',
-						address: '18899764543',
-						money: '冻结中',
-						count: '重置密码	',
-						cart: '解冻'
+						date: 'BJKC -20190405',
+						name: '初中一年级班级课程',
+						address: '城南校区',
+						money: '12',
+						count: '0	',
+						cart: '分班'
 					}, {
-						date: '教师一',
-						name: '城南校区',
-						address: '1851616544',
-						money: '正常',
-						count: '重置密码	',
-						cart: '冻结'
+						date: 'BJKC -20190405',
+						name: '初中一年级班级课程',
+						address: '城南校区',
+						money: '12',
+						count: '1	',
+						cart: '分班'
 					}, {
-						date: '教师一',
-						name: '城南校区',
-						address: '1851616544',
-						money: '正常',
-						count: '重置密码	',
-						cart: '冻结'
+						date: 'BJKC -20190405',
+						name: '初中一年级班级课程',
+						address: '城南校区',
+						money: '12',
+						count: '0	',
+						cart: '分班'
 					}, {
-						date: '教师一',
-						name: '城南校区',
-						address: '1851616544',
-						money: '正常',
-						count: '重置密码	',
-						cart: '冻结'
+						date: 'BJKC -20190405',
+						name: '初中一年级班级课程',
+						address: '城南校区',
+						money: '12',
+						count: '1	',
+						cart: '分班'
 					}, {
-						date: '教师一',
-						name: '城南校区',
-						address: '1851616544',
-						money: '正常',
-						count: '重置密码	',
-						cart: '冻结'
+						date: 'BJKC -20190405',
+						name: '初中一年级班级课程',
+						address: '城南校区',
+						money: '12',
+						count: '0	',
+						cart: '分班'
 					},
 					{
-						date: '教师一',
-						name: '城南校区',
-						address: '1851616544',
-						money: '正常',
-						count: '重置密码	',
-						cart: '冻结'
+						date: 'BJKC -20190405',
+						name: '初中一年级班级课程',
+						address: '城南校区',
+						money: '12',
+						count: '1	',
+						cart: '分班'
 					}
 				],
 				options: [{
@@ -170,7 +166,7 @@
 
 	.center {
 		margin: 0px auto;
-		width:1550px;
+		width: 1500px;
 	}
 
 	.el-table th {
@@ -195,7 +191,7 @@
 	}
 
 	.el-table tr:nth-child(even) td:last-child {
-		color: red !important;
+		color: red;
 	}
 
 	.el-table tr:nth-child(odd) td:last-child {

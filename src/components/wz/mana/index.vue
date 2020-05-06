@@ -8,7 +8,9 @@
 							<span class="tites">班级管理</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="">分班管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="/header/mana/fenban">分班管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="/header/mana/banfenliebiao">分班列表</router-link>
+
 						</el-menu-item-group>
 					</el-submenu>
 					<el-submenu index="2">
