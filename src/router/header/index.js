@@ -74,6 +74,10 @@ export default {
 					path: 'Tupian',
 					component: () => import('../../views/Tao/Tupian/index.vue'),
 				},
+				{
+					path: 'Kaoqing',
+					component: () => import('../../views/Tao/Kaoqing/index.vue'),
+				},
 				
 			],
 

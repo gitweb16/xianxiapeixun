@@ -8,7 +8,7 @@
 							<span class="tites">统计分析</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="">考勤流水分析</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="/header/stati/Kaoqing">考勤流水分析</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="/">报班量统计分析</router-link>
 							<router-link tag="el-menu-item" index="1-3" to="/header/stati/Tupian">报班金额统计分析</router-link>
 							<router-link tag="el-menu-item" index="1-4" to="/header/stati/teas">教师业务流水分析</router-link>

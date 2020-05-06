@@ -29,7 +29,7 @@
 		<div id="sou">
 			<span>搜索</span>
 		</div>
-		<div style="width: 87%;margin-left: 50px;">
+		<div style="width: 87%;margin-left: 50px;margin-top: 20px;">
 			<el-table
 			    ref="multipleTable"
 				 stripe
@@ -87,6 +87,27 @@
 			      show-overflow-tooltip>
 			    </el-table-column>
 			  </el-table>
+			  <el-popover placement="right" width="900" trigger="click">
+			  	<p class="xiang">设置试学规则</p>
+			  	<div>
+			  		<ul class='zhi'>
+			  			<li>课程原价：1500</li>
+						<li>课程原课时：15课时</li>
+						<li>试学价格：<span><el-input v-model="input" placeholder="请输入内容" style="width: 300px;"></el-input></span></li>
+						<li>试学课时：<span><el-input v-model="input" placeholder="请输入内容" style="width: 300px;"></el-input></span></li>
+			  			<li>注意试学价格和课时则代表参加试学活动</li>
+			  			<li style="width:10%;height:50px;line-height:50px;background:#5DABEC;margin-left:600px;text-align: center;;color:white;border-radiu:3px;box-shadow: 2px 0px 6px #5DABEC;">
+			  				取消
+			  			</li>
+						<li style="width:10%;height:50px;line-height:50px;border:1px solid #5DABEC;margin-left:30px;text-align: center;;border-radiu:3px;box-shadow: 2px 0px 6px #5DABEC;color:#5DABEC">
+							保存
+						</li>
+			  		</ul>
+			  	</div>
+			  	<el-button slot="reference" style='position:absolute;margin-top:-460px;margin-left:1040px;border:none'>设置试学规则</el-button>
+			  </el-popover>
+			  
+			  
 			  <div class="block" id="fenye">
 			  					   	<el-pagination
 			  					   	  @size-change="handleSizeChange"
@@ -277,4 +298,15 @@
 		margin-left: 400px;
 		margin-top: 20px;
 	}
+	.zhi li{
+		list-style: none;
+		height: 70px;
+		line-height: 70px;
+		width: 50%;
+		display: inline-block;
+			}
+			.zhi li:nth-of-type(5){
+				margin-left: 300px;
+				color: red;
+			}
 </style>
