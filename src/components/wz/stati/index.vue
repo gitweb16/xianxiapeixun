@@ -8,13 +8,8 @@
 							<span class="tites">统计分析</span>
 						</template>
 						<el-menu-item-group>
-<<<<<<< HEAD
-							<router-link tag="el-menu-item" index="1-1" to="/header/stati/Kaoqing">考勤流水分析</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="/">报班量统计分析</router-link>
-=======
 							<router-link tag="el-menu-item" index="1-1" to="">考勤流水分析</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="">报班量统计分析</router-link>
->>>>>>> bdae9bbed0286fd03a049bdb5adb4cc9eee5aedb
 							<router-link tag="el-menu-item" index="1-3" to="/header/stati/Tupian">报班金额统计分析</router-link>
 							<router-link tag="el-menu-item" index="1-4" to="/header/stati/teas">教师业务流水分析</router-link>
 
@@ -50,7 +45,7 @@
 <style scoped>
 	.views {
 		/* background-color: black; */
-		height: 557px;
+		height: 885px;
 		overflow: auto;
 		padding: 0px !important; 
 		position: absolute;
@@ -93,7 +88,7 @@
 
 	.tacs {
 		position: absolute;
-		height: 557px;
+			height: 885px;
 		overflow: auto;
 	}
 

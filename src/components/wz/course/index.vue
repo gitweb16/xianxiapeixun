@@ -2,17 +2,18 @@
 	<div>
 		<el-row class="tac">
 			<el-col :span="4" class="tacs">
-				<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :default-openeds="['1','2','3']" >
-					<el-submenu index="1" >
+				<el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :default-openeds="['1','2','3']">
+					<el-submenu index="1">
 						<template slot="title" class="tit">
 							<span class="tites">课程管理</span>
 						</template>
 						<el-menu-item-group>
-						
+							<router-link tag="el-menu-item" index="1-4" to="/header/course/Shixue">试学课程管理</router-link>
 							<router-link tag="el-menu-item" index="1-1" to="/header/course/Curriculum">班级课程管理</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="">晚辅导课程管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="/header/course/activ">活动课程管理</router-link>
+							<router-link tag="el-menu-item" index="1-2" to="/header/course/Night">晚辅导课程管理</router-link>
 							<router-link tag="el-menu-item" index="1-3" to="">一对一课程管理</router-link>
-							<router-link tag="el-menu-item" index="1-4" to="/header/course/Shixue">试学课程</router-link>
+							<router-link tag="el-menu-item" index="1-4" to="/header/course/Try">班级课程试学管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>
 					<el-submenu index="2">
@@ -20,8 +21,8 @@
 							<span class="tites">课程消耗</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="">班级课程消耗</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="">晚辅导课程消耗</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="/header/course/consumption">班级课程消耗</router-link>
+							<router-link tag="el-menu-item" index="1-2" to="/header/course/consumptions">晚辅导课程消耗</router-link>
 							<router-link tag="el-menu-item" index="1-3" to="">一对一课程消耗</router-link>
 						</el-menu-item-group>
 					</el-submenu>
@@ -30,16 +31,18 @@
 							<span class="tites">活动课程管理</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="/header/course/active">班级课程活动管理</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="">晚辅导课程活动管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="/header/course/active">班级活动管理</router-link>
+							<router-link tag="el-menu-item" index="1-2" to="/header/course/Evening">晚辅导课程活动管理</router-link>
+							<router-link tag="el-menu-item" index="1-3" to="/header/course/activity">班级活动课程管理</router-link>
+							<router-link tag="el-menu-item" index="1-3" to="/header/course/tutorial">晚辅导课程试学管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>
 				</el-menu>
 			</el-col>
-			<el-col :span="20" :offset="4"  class="views">
-				 <keep-alive>
-					 <router-view></router-view>
-				 </keep-alive>
+			<el-col :span="20" :offset="4" class="views">
+				<keep-alive>
+					<router-view></router-view>
+				</keep-alive>
 			</el-col>
 		</el-row>
 	</div>
@@ -61,14 +64,14 @@
 </script>
 
 <style scoped>
-.views {
+	.views {
 		/* background-color: black; */
-		height: 557px;
+		height: 885px;
 		overflow: auto;
-		padding: 0px !important; 
+		padding: 0px !important;
 		position: absolute;
 		border: 1px solid red;
-	/* 	padding-left: 20px;
+		/* 	padding-left: 20px;
 		padding-top: 0px !important;
 		margin-top: 0px !important; */
 	}
@@ -106,7 +109,7 @@
 
 	.tacs {
 		position: absolute;
-		height: 557px;
+		height: 885px;
 		overflow: auto;
 	}
 

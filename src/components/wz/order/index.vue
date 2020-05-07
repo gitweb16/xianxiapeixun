@@ -8,9 +8,9 @@
 							<span class="tites">订单管理</span>
 						</template>
 						<el-menu-item-group>
-							<router-link tag="el-menu-item" index="1-1" to="">订单管理</router-link>
+							<router-link tag="el-menu-item" index="1-1" to="/header/order/Inform">订单管理</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="/header/order/Tufei">退费管理</router-link>
-							<router-link tag="el-menu-item" index="1-3" to="">转校管理</router-link>
+							<router-link tag="el-menu-item" index="1-3" to="/header/order/Turn">转校管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>
 				</el-menu>
@@ -43,7 +43,7 @@
 <style scoped>
 	.views {
 		/* background-color: black; */
-		height: 557px;
+		height: 885px;
 		overflow: auto;
 		padding: 0px !important; 
 		position: absolute;
@@ -86,7 +86,7 @@
 
 	.tacs {
 		position: absolute;
-		height: 557px;
+		height: 885px;
 		overflow: auto;
 	}
 

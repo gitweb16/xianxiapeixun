@@ -34,18 +34,18 @@
 							<li>通知标题：<span><el-input v-model="input" placeholder="请输入内容" style="width: 250px;"></el-input></span></li>
 							<li>发送用户：<span><el-input v-model="input" placeholder="请输入内容" style="width: 250px;"></el-input></span></li>
 							<li>通知内容：</li>
-							<li style="height: 100px; line-height: 100px;">
+							<li style="width: 67.5%;">
 								<el-input
 								  type="textarea"
-								  :rows="4"
+								  :rows="6"
 								  placeholder="亲爱的[UserName]，您已为[StuName]成功报名了[CourseName],请按时上课哦~"
 								  v-model="textarea">
 								</el-input>
 							</li>
-							<li style="width:10%;height:30px;line-height:30px;background:#5DABEC;margin-left:400px;text-align: center;color:white;border-radiu:3px;box-shadow: 2px 0px 6px #5DABEC;">
+							<li style="cursor: pointer;width:10%;height:30px;line-height:30px;background:#5DABEC;margin-left:400px;text-align: center;color:white;border-radiu:3px;box-shadow: 2px 0px 6px #5DABEC;">
 								取消
 							</li>
-							<li style="width:10%;height:30px;line-height:30px;border:1px solid #5DABEC;margin-left:30px;text-align: center;border-radiu:3px;box-shadow: 2px 0px 6px #5DABEC;color:#5DABEC">
+							<li style="cursor: pointer;width:10%;height:30px;line-height:30px;border:1px solid #5DABEC;margin-left:30px;text-align: center;border-radiu:3px;box-shadow: 2px 0px 6px #5DABEC;color:#5DABEC">
 											保存
 							</li>
 						</ul>
@@ -260,10 +260,18 @@
 	}
 	.zhi li:nth-of-type(3){
 		margin-left: 20px;
+		margin-top: 20px;
 		width: 18%;
 	}
 	.zhi li:nth-of-type(4){
 		margin-left: -90px;
+		margin-top: 20px;
 		
+	}
+	.zhi li:nth-of-type(5){
+		margin-top: 20px;
+	}
+	.zhi li:nth-of-type(6){
+		margin-top: 20px;
 	}
 </style>

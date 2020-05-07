@@ -87,11 +87,11 @@
 						labels: '滨江校区'
 					},
 					{
-						values: '选项5',
+						values: '选项6',
 						labels: '九桐桥校区'
 					},
 					{
-						values: '选项5',
+						values: '选项7',
 						labels: '万达校区'
 					}
 				],
@@ -112,11 +112,11 @@
 						label: '滨江校区'
 					},
 					{
-						value: '选项5',
+						value: '选项6',
 						label: '九桐桥校区'
 					},
 					{
-						value: '选项5',
+						value: '选项7',
 						label: '万达校区'
 					}
 				],
