@@ -249,8 +249,8 @@
 	}
 	.nei{
 		position: absolute;	
-		margin-top: -540px;
-		margin-left: 1230px;
+		margin-top: -572px;
+		margin-left: 1235px;
 	}
 	.xiang{
 	font-weight: bold;	

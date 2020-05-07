@@ -150,7 +150,7 @@
 						</li>
 					</ul>
 				</div>
-				<el-button slot="reference" style='position:absolute;margin-top:-60px;margin-left:10px;border:none'>查看</el-button>
+				<el-button slot="reference" style='position:absolute;margin-top:-480px;margin-left:440px;border:none'>查看</el-button>
 			</el-popover>
 			<div class="block" id="fenye">
 				<el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page.sync="currentPage3"

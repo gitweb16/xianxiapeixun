@@ -50,7 +50,7 @@
 							</li>
 						</ul>
 					</div>
-					<el-button slot="reference" style='position:absolute;margin-top:-460px;margin-left:470px;border:none'>编辑</el-button>
+					<el-button slot="reference" style='position:absolute;margin-top: -477px;margin-left: 395px;border:none'>编辑</el-button>
 				</el-popover>
 				<div class="block" id="fenye">
 					<el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page.sync="currentPage3"

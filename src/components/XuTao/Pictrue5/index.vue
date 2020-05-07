@@ -96,7 +96,7 @@
 	.tuFive {
 		border: 1px solid lightgrey;
 		margin-top: 20px;
-		width: 90%;
+		width: 84%;
 		margin-left: 100px;
 		padding-top: 20px;
 	}

@@ -141,7 +141,7 @@
 						  </el-select>
 						</li>
 			  			<li>根菜单名称：
-						<el-select v-model="value1" placeholder="请选择根菜单" >
+						<el-select v-model="value1" placeholder="请选择根菜单" style="width: 269px;" >
 						    <el-option 
 						      v-for="item in options"
 						      :key="item.value1"
@@ -550,8 +550,8 @@
 	}
 	.cai{
 		position: absolute;	
-		margin-top: -595px;
-		margin-left: 1010px;
+		margin-top: -615px;
+		margin-left: 1115px;
 		height:500px ;
 	}
 	.xiang  li{
@@ -598,7 +598,7 @@
 	}
 	.cz{
 		width: 12%;
-		margin-left: 350px;
+		margin-left: 30px;
 		text-align: center;
 		color:#5DABEC;
 		border: 1px solid #5DABEC;
