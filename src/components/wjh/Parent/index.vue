@@ -51,27 +51,52 @@
 		</div>
 		<div id="hai">
 			<el-table ref="multipleTable" :data="tableData" tooltip-effect="dark" @selection-change="handleSelectionChange">
-				<el-table-column type="selection" width="110">
+				<el-table-column prop="bianma" label="用户来源" width="160">
 				</el-table-column>
-				<el-table-column prop="bianma" label="编码" width="160">
+				<el-table-column prop="address" label="用户昵称" width="200">
 				</el-table-column>
-				<el-table-column prop="address" label="名称" width="200">
+				<el-table-column prop="xiaoqu" label="性别">
 				</el-table-column>
-				<el-table-column prop="xiaoqu" label="校区">
+				<el-table-column prop="nianji" label="是否注册">
 				</el-table-column>
-				<el-table-column prop="nianji" label="年级">
+				<el-table-column prop="price" label="手机号码">
 				</el-table-column>
-				<el-table-column prop="price" label="原价">
+				<el-table-column prop="shi" label="学员数">
 				</el-table-column>
-				<el-table-column prop="shi" label="是否参加活动">
+				<el-table-column prop="active" label="是否消费">
 				</el-table-column>
-				<el-table-column prop="active" label="活动价">
-				</el-table-column>
-				<el-table-column prop="caozuo" label="操作">
-					<a id="shezhi" type="text" @click="open"> 设置活动价</a>
+				<el-table-column prop="caozuo" label="查看">
+					<a id="shezhi" type="text" @click="open"> 查看</a>
 				</el-table-column>
 			</el-table>
-
+<el-popover class="nei"
+		   placement="right"
+		   width="900"
+		   trigger="click">
+		    <p class="xiang">订单详情</p>
+			<div>
+				<ul class="ding">
+					<li>用户来源: 微信小程序</li>
+					<li>用户昵称:ABB</li>
+				    <li>性别: 男</li>
+					<li>获取时间:2019-9-7</li>
+					<li>是否注册:是</li>
+					<li>手机号码:110120</li>
+					<li>注册时间:20.1544</li>
+				    <li>学员数量:2</li>
+				    <li>学员姓名: 学员1 学员2</li>
+				    <li>是否消费:是</li>
+				    <li>消费次数: 2</li>
+					<li>消费金额: 12000.00</li>
+					<li>剩余总价: 1200</li>
+					<li>
+						<div id="close"><span>关</span></div>
+					
+					</li>
+				</ul>
+			</div>
+		   <el-button slot="reference" style="border:none;margin-left: 395px;color:#0000FF;showClose:true">查看</el-button>
+		 </el-popover>
 		</div>
 		<div class="block" id="fenye">
 			<el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page.sync="currentPage3"
@@ -84,26 +109,17 @@
 
 </template>
 
-<script>
+<script scoped>
 	export default {
 		name: 'parent',
 		data() {
 			return {
 				options: [{
 					value: '选项1',
-					label: '城南小区'
+					label: '微信小程序'
 				}, {
 					value: '选项2',
-					label: '水榭校区'
-				}, {
-					value: '选项3',
-					label: '蚵仔煎'
-				}, {
-					value: '选项4',
-					label: '世贸校区'
-				}, {
-					value: '选项5',
-					label: '话指南校区'
+					label: '支付宝小程序'
 				}],
 				
 				oo: [{
@@ -126,53 +142,53 @@
 				value3: '',
 				input: '',
 				tableData: [{
-					bianma: 'BDASF456132654',
-					address: '初中一年级班级课程',
-					xiaoqu: '城南校区',
-					nianji: '初中一年级',
-					price: '350',
-					shi: '是',
-					active: '300',
+					bianma: '微信小程序',
+					address: '微信名称——ABB',
+					xiaoqu: '男',
+					nianji: '是',
+					price: '15173075028',
+					shi: '2',
+					active: '是',
 				}, {
-					bianma: 'BDASF456132654',
-					address: '初中一年级班级课程',
-					xiaoqu: '城南校区',
-					nianji: '初中一年级',
-					price: '350',
-					shi: '是',
-					active: '300',
+					bianma: '微信小程序',
+					address: '微信名称——ABB',
+					xiaoqu: '男',
+					nianji: '是',
+					price: '15173075028',
+					shi: '2',
+					active: '是',
 				}, {
-					bianma: 'BDASF456132654',
-					address: '初中一年级班级课程',
-					xiaoqu: '城南校区',
-					nianji: '初中一年级',
-					price: '350',
-					shi: '是',
-					active: '300',
+					bianma: '微信小程序',
+					address: '微信名称——ABB',
+					xiaoqu: '男',
+					nianji: '是',
+					price: '15173075028',
+					shi: '2',
+					active: '是',
 				}, {
-					bianma: 'BDASF456132654',
-					address: '初中一年级班级课程',
-					xiaoqu: '城南校区',
-					nianji: '初中一年级',
-					price: '350',
-					shi: '是',
-					active: '300',
+					bianma: '微信小程序',
+					address: '微信名称——ABB',
+					xiaoqu: '男',
+					nianji: '是',
+					price: '15173075028',
+					shi: '2',
+					active: '是',
 				}, , {
-					bianma: 'BDASF456132654',
-					address: '初中一年级班级课程',
-					xiaoqu: '城南校区',
-					nianji: '初中一年级',
-					price: '350',
-					shi: '是',
-					active: '300',
+					bianma: '微信小程序',
+					address: '微信名称——ABB',
+					xiaoqu: '男',
+					nianji: '是',
+					price: '15173075028',
+					shi: '2',
+					active: '是',
 				}, , {
-					bianma: 'BDASF456132654',
-					address: '初中一年级班级课程',
-					xiaoqu: '城南校区',
-					nianji: '初中一年级',
-					price: '350',
-					shi: '是',
-					active: '300',
+					bianma: '微信小程序',
+					address: '微信名称——ABB',
+					xiaoqu: '男',
+					nianji: '是',
+					price: '15173075028',
+					shi: '2',
+					active: '是',
 				}],
 				currentPage1: 5,
 				currentPage2: 5,
@@ -196,7 +212,75 @@
 		}
 	}
 </script>
-<style>
+<style scope>
+	
+	#close{
+		width: 140px;
+		height: 40px;
+		background: #5584ff;
+		position: absolute;
+		margin-top: 110px;
+		margin-left: 350px;
+		line-height: 40px;
+	}
+	#close span{
+		width: 100%;
+		height: 100%;
+		display: block;
+		text-align: center;
+		text-indent: 0px;
+	}
+	.nei{
+		position: absolute;	
+		margin-top: -285px;
+		margin-right: 90px;
+	}
+	.ding li{
+		width: 50%;
+		height: 20px;
+		line-height: 20px;
+		list-style: none;
+		display: inline-block;
+		font-size: 12px;
+		text-indent: 30px;
+	}
+	.ding li:nth-of-type(7){
+		width: 100%;
+	}
+	.ding li:nth-of-type(10){
+		width: 100%;
+	}
+	.ding li:nth-of-type(13){
+		width: 100%;
+	}
+	.ding li:nth-of-type(1){
+	   margin-top: 30px;
+	}
+	.ding li:nth-of-type(2){
+		margin-top: 30px;
+	}
+	.ding li:nth-of-type(5){
+	   margin-top: 50px;
+	}
+	.ding li:nth-of-type(6){
+		margin-top: 50px;
+	}
+	.ding li:nth-of-type(8){
+	   margin-top: 50px;
+	}
+	.ding li:nth-of-type(9){
+		margin-top: 50px;
+	}
+	.ding li:nth-of-type(11){
+	   margin-top: 50px;
+	}
+	.ding li:nth-of-type(12){
+		margin-top: 50px;
+	}
+	.ding li:nth-of-type(14){
+		height: 160px;
+		width: 100%;
+	}
 	#app {
 		margin-top: 20px;
 	}

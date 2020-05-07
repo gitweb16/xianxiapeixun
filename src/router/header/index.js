@@ -23,6 +23,10 @@ export default {
 				{
 					path: 'Tongzhi',
 					component: () => import('../../views/Tao/Tongzhi/index.vue'),
+				},
+				{
+					path: 'quanxian',
+					component: () => import('../../views/wjh/Quanxian/index.vue'),
 				}
 			]
 		},
@@ -66,7 +70,12 @@ export default {
 			children: [{
 				path: 'Laoshi',
 				component: () => import('../../views/Tao/Laoshi/index.vue'),
-			}]
+				},{
+					path: 'School',
+					component: () => import('../../views/wjh/School/index.vue'),
+					
+				}
+			]
 		},
 		{
 			path: "stati",

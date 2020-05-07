@@ -18,7 +18,7 @@ export default{
 }
 </script>
 
-<style>
+<style scoped>
 	.jinE{
 		width:95%;
 		margin-left:30px;

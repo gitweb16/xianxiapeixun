@@ -1,25 +1,19 @@
 <template>
 	<div>
 		<div class="jinE">
-			<p><span class="heng"></span><span class="heng2">班级活动管理</span></p>
+			<p><span class="heng"></span><span class="heng2">家长账号管理</span></p>
 		</div>
-		<Huodong></Huodong>
-		<xiaoqu></xiaoqu>
-		<yes></yes>
+		<quanxian></quanxian>
 	</div>
 </template>
 
 <script>
-import Huodong from'../../../components/wjh/Active/biaoge'
-import xiaoqu from'../../../components/wjh/Active/xiaoqu'
-import yes from'../../../components/wjh/Active/yes'
+import quanxian from'../../../components/wjh/Quan'
+
 export default{
-	name:'huodong1',
-	components: {
-		Huodong,
-		xiaoqu,
-		yes
-		
+	name:'qx',
+	components:{
+		quanxian,
 	}
 }
 </script>

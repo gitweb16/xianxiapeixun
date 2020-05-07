@@ -1,25 +1,19 @@
 <template>
 	<div>
 		<div class="jinE">
-			<p><span class="heng"></span><span class="heng2">班级活动管理</span></p>
+			<p><span class="heng"></span><span class="heng2">校区管理</span></p>
 		</div>
-		<Huodong></Huodong>
-		<xiaoqu></xiaoqu>
-		<yes></yes>
+		<xuexiao></xuexiao>
 	</div>
 </template>
 
 <script>
-import Huodong from'../../../components/wjh/Active/biaoge'
-import xiaoqu from'../../../components/wjh/Active/xiaoqu'
-import yes from'../../../components/wjh/Active/yes'
+import xuexiao from'../../../components/wjh/School'
+
 export default{
-	name:'huodong1',
-	components: {
-		Huodong,
-		xiaoqu,
-		yes
-		
+	name:'ii',
+	components:{
+		xuexiao,
 	}
 }
 </script>
@@ -50,5 +44,6 @@ export default{
 		border:1px solide red;
 		margin-top: -18px;
 		margin-left: 20px;
+		color:#a6a6a6;
 		}
 </style>
