@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-			<el-popover placement="right" width="900" trigger="click">
+			<el-popover placement="right" width="900"  trigger="click">
 				<p>通知编辑</p>
 				<div>
 					<ul class='nei'>
@@ -23,7 +23,7 @@
 						</li>
 					</ul>
 				</div>
-				<el-button slot="reference" style='position:absolute;margin-top:0px;margin-left:100px;z-index:30;color:white;background: #5DABEC;
+				<el-button slot="reference" style='position:absolute;margin-top:-10px;margin-left:100px;z-index:30;color:white;background: #5DABEC;
 		box-shadow: 0px 0px 5px #5DABEC;'>新增机构通知</el-button>
 			</el-popover>
 		<div class="zi">
@@ -67,7 +67,7 @@
 						</li>
 					</ul>
 				</div>
-				<el-button slot="reference" style='position:absolute;margin-top:-450px;margin-left:240px;border:none;z-index: 3;'>查看</el-button>
+				<el-button slot="reference" style='position:absolute;margin-top: -474px;margin-left: 302px;border:none;z-index: 3;'>查看</el-button>
 			</el-popover>
 			
 			
@@ -140,7 +140,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	#add {
 		color: white;
 		width: 6%;
@@ -149,7 +149,7 @@
 		margin-left: 100px;
 		border-radius: 3px;
 		text-align: center;
-		margin-top: -20px;
+		margin-top: -23px;
 	}
 
 	#add span {
@@ -167,7 +167,7 @@
 		width: 30%;
 		margin-top: -5px;
 		position: absolute;
-		margin-left: 870px;
+		margin-left: 670px;
 		font-size: 13px;
 		color: darkgray;
 	}

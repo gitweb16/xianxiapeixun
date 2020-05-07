@@ -22,7 +22,7 @@
   }
 </script>
 
-<style>
+<style scoped>
 	.tuFouer{
 		width: 40%;
 		border: 1px solid lightgrey;

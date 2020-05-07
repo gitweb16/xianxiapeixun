@@ -42,12 +42,12 @@
 <style scoped>
 	.views {
 		/* background-color: black; */
-		height: 557px;
+		height: 885px;
 		overflow: auto;
-		padding: 0px !important; 
+		padding: 0px !important;
 		position: absolute;
 		border: 1px solid red;
-	/* 	padding-left: 20px;
+		/* 	padding-left: 20px;
 		padding-top: 0px !important;
 		margin-top: 0px !important; */
 	}
@@ -85,7 +85,7 @@
 
 	.tacs {
 		position: absolute;
-		height: 557px;
+		height: 885px;
 		overflow: auto;
 	}
 
