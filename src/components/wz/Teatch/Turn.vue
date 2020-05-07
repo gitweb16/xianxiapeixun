@@ -4,7 +4,7 @@
 			<p><span class="heng"></span><span class="heng2">转校管理</span></p>
 		</div>
 		<div style="margin-left: 30px;margin-bottom:5px;">
-			<el-button type="primary" @click="dialogVisible =true">新增转校</el-button>
+			<el-button type="primary" @click="go">新增转校</el-button>
 		</div>
 		<div class="center">
 			<el-table :data="tableData" style="width: 100%">
@@ -26,8 +26,7 @@
 				</el-table-column>
 				<el-table-column prop="ope" label="操作" width="171">
 					<template slot-scope="scope">
-						<el-button @click="handleClick(scope.row)" type="text" size="small">{{scope.row.ope}}</el-button>
-
+						<el-button size="mini" @click="dialogFormVisible=true">查看</el-button>
 					</template>
 				</el-table-column>
 			</el-table>
@@ -36,6 +35,36 @@
 				</el-pagination>
 			</div>
 		</div>
+		<el-dialog :visible.sync="dialogFormVisible" style="width: 2000px!important;margin: 0px auto;" @click="dialogFormVisible">
+			<h3>原订单管理</h3>
+
+			<div>
+				<span class="spans">订单编号:20190415001</span><span class="spanss">订单来源：微信小程序</span>
+				<span class="spans">订单时间:2019-4-14</span><span class="spanss spanmar">业务教师：无</span><br />
+
+				<span class="spans">课程名称:英语个性化一对一教学</span><span class="spanss">课程校区：城南校区</span>
+				<span class="spans spanmar">课程教师:授课教师</span><br />
+
+				<span class="spans">家长ID:耐寒教育</span><span class="spanss">家长手机号：18809122232</span>
+				<span class="spans spanmar">学员姓名:学员一，学员二</span><br />
+
+
+				<span class="spans">课程单价:100</span><span class="spanss">剩余课时：12</span>
+				<span class="spans spanmar">剩余总价:1200</span><br />
+			</div>
+			<h3>转校订单详情</h3>
+			<div>
+				<span class="spans">订单时间:2019-4-14</span><span class="spanss spanmar">业务教师：无</span><br />
+
+				<span class="spans">课程名称:英语个性化一对一教学</span><span class="spanss">课程校区：城南校区</span>
+				<span class="spans spanmar">课程教师:授课教师</span><br />
+
+				<span class="spans">课程单价:120</span><span class="spanss">剩余课时：12</span>
+				<span class="spans">总价:1200</span><br />
+				<span class="spans">需补差价240</span><span class="spanss">支付状态:已支付</span>
+			</div>
+
+		</el-dialog>
 	</div>
 </template>
 
@@ -143,7 +172,14 @@
 						dat: '审核通过',
 						ope: '查看',
 					},
-				]
+				],
+				dialogFormVisible: false
+			}
+
+		},
+		methods:{
+			go(){
+				this.$router.push({path:'../../header/order/Transfer'})     
 			}
 		}
 	}
@@ -153,6 +189,26 @@
 	.center {
 		margin: 0px auto;
 		width: 1550px;
+	}
+
+	.spans {
+		margin-left: 200px;
+		margin-bottom: 10px;
+		display: inline-block;
+		width: 200px;
+
+	}
+
+	.spanss {
+		margin-left: 300px !important;
+		display: inline-block;
+		width: 200px;
+
+
+	}
+
+	.spanmar {
+		margin-bottom: 90px;
 	}
 
 	.jinE {

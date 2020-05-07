@@ -116,6 +116,10 @@ export default {
 					path: 'Turn',
 					component: () => import('../../components/wz/Teatch/Turn.vue'),
 				},
+				{
+					path: 'Transfer',
+					component: () => import('../../components/wz/Teatch/Transfer.vue'),
+				},
 			]
 		},
 		{
