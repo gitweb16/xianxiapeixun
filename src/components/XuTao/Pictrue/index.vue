@@ -38,7 +38,7 @@
 	    }
 	  }
 </script>
-<style>
+<style scoped>
 	.tuOne{
 		width: 40%;
 		margin-top: 20px;

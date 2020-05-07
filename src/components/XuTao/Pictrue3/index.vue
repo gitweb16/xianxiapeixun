@@ -27,7 +27,7 @@
   }
 </script>
 
-<style>
+<style scoped>
 	.tuThree{
 		width: 40%;
 		margin-top: 20px;

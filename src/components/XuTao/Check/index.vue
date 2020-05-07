@@ -39,7 +39,7 @@
 	    }
 	  }
 </script>
-<style>
+<style scoped>
 	.tuOne{
 		width: 40%;
 		border: 1px solid lightgrey;

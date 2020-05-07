@@ -92,7 +92,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.tuFive {
 		border: 1px solid lightgrey;
 		margin-top: 20px;

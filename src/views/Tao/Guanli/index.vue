@@ -3,24 +3,31 @@
 		<div class="jinE">
 			<p><span class="heng"></span><span class="heng2">通知管理</span></p>
 		</div>
-		
+		<Message></Message>
 	</div>
 </template>
 
 <script>
-	
+	import Message from '../../../components/XuTao/Message'
+	export default {
+		name: 'Guanli',
+		components: {
+			Message
+		}
+	}
 </script>
 
 <style>
-	.jinE{
-			width:92%;
-			height:40px;
-			font-size: 12px;
-			color: darkgray;
-			line-height: 35px;
-			background-color: #f9f9f9;
-			margin-bottom: 40px;	
-		}
+	.jinE {
+		width: 100%;
+		height: 40px;
+		font-size: 12px;
+		color: darkgray;
+		line-height: 35px;
+		background-color: #f9f9f9;
+		z-index: 3;
+		margin-bottom: 40px;
+	}
 		.heng{
 			height:20px;
 			line-height: 40px;

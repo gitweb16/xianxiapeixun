@@ -274,7 +274,7 @@
     }
   
 </script>
-<style>
+<style scoped>
 	#sou{
 		color: white;
 		width: 5%;

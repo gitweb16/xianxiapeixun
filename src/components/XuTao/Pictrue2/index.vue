@@ -33,7 +33,7 @@
 </script>
 
 
-<style>
+<style scoped>
 	.tuTwo{
 		width: 40%;
 		border: 1px solid lightgrey;

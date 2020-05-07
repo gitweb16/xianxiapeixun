@@ -411,7 +411,7 @@
 	    
  
 </script>
-<style>
+<style scoped>
 	#app{
 		width: 100%;
 	}

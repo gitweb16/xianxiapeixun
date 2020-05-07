@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-			<el-popover placement="right" width="900" trigger="click">
+			<el-popover placement="right" width="900"  trigger="click">
 				<p>通知编辑</p>
 				<div>
 					<ul class='nei'>
@@ -140,7 +140,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	#add {
 		color: white;
 		width: 6%;
