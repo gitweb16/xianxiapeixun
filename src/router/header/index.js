@@ -12,7 +12,7 @@ export default {
 					path: 'account',
 					component: () => import('../../components/wz/Teatch/account.vue'),
 				},
-				{ 
+				{
 					path: 'jiazhang',
 					component: () => import('../../views/wjh/Parent/index.vue'),
 				},
@@ -38,17 +38,48 @@ export default {
 					component: () => import('../../components/wz/Teatch/Curriculum.vue')
 				},
 				{
-
 					path: 'Shixue',
 					component: () => import('../../views/Tao/Shixue/index.vue')
-				}
+				},
+				{
+					path: 'activity',
+					component: () => import('../../components/wz/Teatch/activity.vue')
+				},
+				{
+					path: 'activ',
+					component: () => import('../../components/wz/Teatch/activ.vue')
+				},
+				{
+					path: 'Try',
+					component: () => import('../../components/wz/Teatch/Try.vue')
+				},
+				{
+					path: 'consumption',
+					component: () => import('../../components/wz/Teatch/consumption.vue')
+				},
+				{
+					path: 'Night',
+					component: () => import('../../components/wz/Teatch/Night.vue')
+				},
+				{
+					path: 'Evening',
+					component: () => import('../../components/wz/Teatch/Evening.vue')
+				},
+				{
+					path: 'tutorial',
+					component: () => import('../../components/wz/Teatch/tutorial.vue')
+				},
+				{
+					path: 'consumptions',
+					component: () => import('../../components/wz/Teatch/consumptions.vue')
+				},
+
 			]
 		},
 		{
 			path: "mana",
 			component: () => import('../../components/wz/mana/index.vue'),
-			children: [
-				{
+			children: [{
 					path: 'management',
 					component: () => import('../../components/wz/Teatch/management.vue'),
 				},
@@ -59,20 +90,32 @@ export default {
 				{
 					path: 'banfenliebiao',
 					component: () => import('../../components/zyc/fenban/banfenliebiao.vue'),
-				}
+				},
+				{
+					path: 'schedule',
+					component: () => import('../../components/wz/Teatch/schedule.vue'),
+				},
+				{
+					path: 'hour',
+					component: () => import('../../components/wz/Teatch/hour.vue'),
+				},
 			],
 		},
 		{
 			path: "order",
 			component: () => import('../../components/wz/order/index.vue'),
 			children: [{
-				path: 'Tufei',
-				component: () => import('../../views/Tao/Tuifei/index.vue'),
-			},
+					path: 'Tufei',
+					component: () => import('../../views/Tao/Tuifei/index.vue'),
+				},
 				{
 					path: 'Inform',
 					component: () => import('../../components/zyc/dingdan/dingdanguanli.vue'),
-				}
+				},
+				{
+					path: 'Turn',
+					component: () => import('../../components/wz/Teatch/Turn.vue'),
+				},
 			]
 		},
 		{

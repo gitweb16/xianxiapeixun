@@ -17,6 +17,7 @@
 				<li><span>手机号码：</span>
 					<el-input v-model="inputs" placeholder="请输入内容"></el-input>
 				</li>
+				
 			</ul>
 		</div>
 		<div class="center">
@@ -172,12 +173,13 @@
 		margin: 0px auto;
 		width:1550px;
 	}
-
+	
 	.el-table th {
-		background: #d7d7d7;
+		background: #d7d7d7 !important;
 		color: black;
 		font-weight: normal;
 	}
+
 
 	.el-table td,
 	.el-table tr {

@@ -19,8 +19,8 @@
 						</template>
 						<el-menu-item-group>
 							<router-link tag="el-menu-item" index="1-1" to="/header/mana/management">教室管理</router-link>
-							<router-link tag="el-menu-item" index="1-2" to="">课时管理</router-link>
-							<router-link tag="el-menu-item" index="1-3" to="">课表管理</router-link>
+							<router-link tag="el-menu-item" index="1-2" to="/header/mana/hour">课时管理</router-link>
+							<router-link tag="el-menu-item" index="1-3" to="/header/mana/schedule">课表管理</router-link>
 							<router-link tag="el-menu-item" index="1-3" to="">调课管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>

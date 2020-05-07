@@ -10,7 +10,7 @@
 						<el-menu-item-group>
 							<router-link tag="el-menu-item" index="1-1" to="/header/order/Inform">订单管理</router-link>
 							<router-link tag="el-menu-item" index="1-2" to="/header/order/Tufei">退费管理</router-link>
-							<router-link tag="el-menu-item" index="1-3" to="">转校管理</router-link>
+							<router-link tag="el-menu-item" index="1-3" to="/header/order/Turn">转校管理</router-link>
 						</el-menu-item-group>
 					</el-submenu>
 				</el-menu>
